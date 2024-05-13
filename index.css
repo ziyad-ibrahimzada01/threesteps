@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 100px 0 80px;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow:0 10px 10px -15px #111;
+}
+.headerlogo{
+    display: flex;
+    align-items: center;
+    
+}
+.headerlogo img{
+    width: 277px;
+    height: 60px;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: #7757ea ;
+}
+header button{
+    display: none;
+    cursor: pointer;
+}
+header button span{
+    width: 45px;
+    height: 8px;
+    
+   }
+.first-section{
+color: #fff;
+background-image: url(https://www.threesteps.az/homebg.png);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+height: 100%
+}
+.first-section div{
+width: 60%;
+height: calc(100vh - 100px);
+
+padding: 150px 50px ;
+gap: 300px;
+}
+.first-section div h1{
+    padding: 20px 0;
+    font-size: 40px;
+}
+.first-section div p{
+    font-size: 18px;
+    line-height: 27px;
+}
+.services{
+    background-color: rgb(241, 241, 250);
+    width: 100%;
+    height: 110vh;
+}
+.services h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.services div{
+    display: flex;
+    flex-wrap: wrap;
+   
+    width: 100%;
+    margin: auto;
+    gap: 40px;
+}
+.services div div{
+    transition: all 1s;
+    width: 30%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 3px 0px 8px 0px grey;  
+}
+.second-section-image{
+   background: transparent;
+   
+}
+.services div div:hover{
+    background: #39eff0;
+    background: linear-gradient(60deg, #39eff0, #c9bafd) ;
+}
+.services div div:hover + .second-section-image{
+    background: transparent;
+}
+.small:hover+.second-section-image{
+    background: transparent;
+}
+.aboutus{
+    display: flex;
+    padding: 100px;
+}
+.aboutus-image{
+    display: block;
+}
+.aboutus-article-div h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+.aboutus-article-div p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-inline:30px ;
+}
+.aboutus-article-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.partners{
+    background-color: #f4f1fd;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.partners-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners-below{
+    font-size: 120px;
+    opacity: .2;
+    font-weight: 500;
+    color: #8fb4ce;
+}
+.partners-above{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+.portfolio{
+    width: 100%;
+    height: 90vh;
+    
+}
+.portfolio h1{
+    font-size: 40px;
+    display: flex   ;
+    justify-content: center;
+    margin: 100px 0;
+}
+.portfolio-div{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly; 
+    gap: 50px;
+    
+}    
+
+.portfolio-inner-div{
+  
+    width:  20%;
+    height: 25vh;
+}
+.portfolio-inner-div img{
+    width: 100%;
+    height: 25vh;
+}
+.products{
+    width: 100%;
+    height: 70vh;
+    background-color: #fbfbfb;
+}
+.products h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 50px 0;
+}
+.products-main-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.products-div{
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 1px 6px 0px grey; 
+    border-radius: 10px; 
+    
+}
+.products-div img{
+    position: absolute;
+    top: 0;
+  
+}
+.hola{
+    position: absolute;
+    top: 40px !important;
+}
+.products-div p{
+    color: #315d93;
+    text-align: center;
+    margin: 30px 0;
+    position: absolute;
+    bottom: 0;
+}
+.p-medbooking{
+    background: #6e388d;
+    background: linear-gradient(60deg, #6e388d 27%, #4eadae 68%);
+    font-size: 24px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    position: absolute;
+    top: 40px;
+}
+.contact{
+    width: 100%;
+    height: 70vh;
+    padding: 10px 120px 120px;
+    background: linear-gradient(180deg,#fbfbfb,#f3f1fc 40%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.left-div h1{
+    color: #28387f;
+    font-size: 40px;
+    padding: 40px 0;
+}
+.left-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left-inner a{
+    text-decoration: none;
+    color: #000;
+}
+.right-div{
+    width: 60%;
+    
+}
+form{
+    
+}
+.right-div-div{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.right-div-four-divs{
+    width:40%;
+    height: 5vh;
+    border-bottom: 1px solid grey;
+    margin: 20px;
+}
+.right-div-four-divs input{
+    width: 80%;
+    height: 5vh;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    
+}
+.right-div-four-divs input::placeholder{
+    font-size: 20px;
+}
+.right-div-single-div{
+    width: 86%;
+    margin: 20px;
+    border-bottom: 1px solid grey;
+}
+.right-div-single-div input{
+    width: 80%;
+    height: 5vh;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.right-div-single-div input::placeholder{
+    font-size: 20px;
+}
+.right-div button{
+    background: linear-gradient(90deg,#6f4de9,#4bafad);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 12px 50px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+footer{
+    background: linear-gradient(180deg,#f3f1fc,#d9d0fc 69%);
+    padding: 48px 16px;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #70768a;
+}
+@media only screen and (max-width : 768px) {
+    /* For middle :  */
+            nav{
+            display: none;
+           }
+           header button {
+            display: block;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            gap: 8px;
+            
+           }
+           header button span{
+            
+            display: block;
+            background-color: #7757ea;
+            
+           }
+           .first-section div{
+            width: 100%;
+           }
+           .services div div{
+            width: 40%;
+            
+    
+           }
+           .services{
+            height: 150vh;
+           }
+           .aboutus{
+            padding: 10px;
+            height: 80vh;
+           }
+           .aboutus-image{
+            display: none;
+        }
+        .partners{
+            display: flex;
+            flex-direction: column;
+        }
+        .portfolio{
+            height: 150vh;
+        }
+        .portfolio-div{
+            gap: 20px;
+        }
+        .portfolio-inner-div{
+            width: 40%;
+        }
+        .products{
+            height: 100vh;
+        }
+        .products-main-div{
+            gap:40px;
+        }
+        .products-div{
+            width: 40%;
+        }
+        .contact{
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 12px 12px;
+        }
+        .left-div{
+            padding: 20px ;
+        }
+        .right-div{
+            width: 100%;
+            
+        }
+        .right-div-four-divs{
+            width: 100%;
+        }
+        .right-div-single-div{
+            width: 90%;
+        }
+}
+                @media only screen and (max-width: 575px) {
+                   /* For small : */
+                      header{
+                       display: flex;
+                       justify-content: space-evenly;
+                       padding: 0;
+                      } 
+                      nav{
+                       display: none;
+                      }
+                      header button {
+                       display: block;
+                       background-color: #fff;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       border: none;
+                       gap: 8px;
+                       
+                      }
+                      header button span{
+                       /* width: 45px;
+                       height: 8px; */
+                       display: block;
+                       background-color: #7757ea;
+                       
+                      }
+                      .first-section div{
+                       width: 100%;
+                      }
+                      .services{
+                       height: 280vh;
+                       width: 100%;
+                      }
+                      
+                      .services div div{
+                       width: 80%;
+                      }
+                      .portfolio{
+                        height: 310vh;
+                      }
+                      .portfolio-div{
+                        gap: 60px;
+                      }
+                      .portfolio-inner-div{
+                        width: 80%;
+                      }
+                      .products-main-div{
+                        gap: 40px;
+                      }
+                      .products-div{
+                        width: 40%;
+                    }
+                    .products-div p{
+                        margin: 0;
+                    }
+                }       
